@@ -59,6 +59,37 @@
           }
         }
       }
+    },
+    "seek-command": {
+      "root": "libs/seek/command",
+      "sourceRoot": "libs/seek/command/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/seek/command/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/seek/command/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/seek/command",
+            "tsConfig": "libs/seek/command/tsconfig.lib.json",
+            "packageJson": "libs/seek/command/package.json",
+            "main": "libs/seek/command/src/index.ts",
+            "assets": ["libs/seek/command/*.md"]
+          }
+        }
+      }
     }
   },
   "cli": {

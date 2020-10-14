@@ -3,5 +3,6 @@ module.exports = {
     '<rootDir>/libs/nxutil/client/image-handle',
     '<rootDir>/apps/demo',
     '<rootDir>/libs/util/test',
+    '<rootDir>/libs/seek/command',
   ],
 };
