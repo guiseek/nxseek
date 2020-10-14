@@ -90,6 +90,37 @@
           }
         }
       }
+    },
+    "fire-cli": {
+      "root": "libs/fire/cli",
+      "sourceRoot": "libs/fire/cli/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/fire/cli/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/fire/cli/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/fire/cli",
+            "tsConfig": "libs/fire/cli/tsconfig.lib.json",
+            "packageJson": "libs/fire/cli/package.json",
+            "main": "libs/fire/cli/src/index.ts",
+            "assets": ["libs/fire/cli/*.md"]
+          }
+        }
+      }
     }
   },
   "cli": {

@@ -4,5 +4,6 @@ module.exports = {
     '<rootDir>/apps/demo',
     '<rootDir>/libs/util/test',
     '<rootDir>/libs/seek/command',
+    '<rootDir>/libs/fire/cli',
   ],
 };

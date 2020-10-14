@@ -20,7 +20,8 @@
         "libs/util/client/image-handle/src/index.ts"
       ],
       "@nxutil/test": ["libs/util/test/src/index.ts"],
-      "@nxseek/command": ["libs/seek/command/src/index.ts"]
+      "@nxseek/command": ["libs/seek/command/src/index.ts"],
+      "@nxfire/cli": ["libs/fire/cli/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

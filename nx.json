@@ -31,6 +31,9 @@
     },
     "seek-command": {
       "tags": ["scope:nxseek"]
+    },
+    "fire-cli": {
+      "tags": ["scope:nxfire"]
     }
   }
 }
