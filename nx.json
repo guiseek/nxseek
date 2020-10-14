@@ -22,5 +22,12 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "util-client-image-handle": {
+      "tags": ["side:client", "type:util"]
+    },
+    "util-test": {
+      "tags": ["type:util"]
+    }
+  }
 }

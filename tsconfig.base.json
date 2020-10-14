@@ -15,7 +15,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nxutil/image-handle-client": [
+        "libs/util/client/image-handle/src/index.ts"
+      ],
+      "@nxutil/test": ["libs/util/test/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
